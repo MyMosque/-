@@ -1,0 +1,6 @@
+<nav class="">
+    <ul id="menu">
+        <li *ngFor="let item of nav" class="rip"><a routerLink="/{{item.path}}" [routerLinkActive]="['is-active']" [routerLinkActiveOptions]="{ exact: true }">{{item.name}}</a></li>
+    </ul>
+</nav>
+

@@ -1,1 +1,1 @@
-# mosque.github.io
+# Town Mosque
