@@ -1,0 +1,84 @@
+#menu {
+    align-content: center;    
+    order:2;    
+    margin:0;
+    padding: 0;
+}
+#menu li {
+    background-color: #0B0D0D;
+    list-style: none;
+    margin-bottom: 4px;
+}
+#menu li:last-child {    
+    margin-bottom: 0px;
+}
+#menu li a {
+    color: #E3F0EF;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+@media all and (min-width: 600px) {    
+    :host {
+        order:1;
+        flex: 1 0px;
+    }
+    #menu li a {
+        font-size:3.4vw;
+    }
+}
+
+@-webkit-keyframes rip {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+@keyframes rip {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+.rip {  
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+
+.rip:before {
+  content: '';
+  position: absolute;
+  border: #0B0D0D solid 6px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.rip:hover:before, .rip:focus:before, .rip:active:before {
+  -webkit-animation-name: rip;
+  animation-name: rip;
+}
+
+#menu li a.is-active {
+    background-color: #f8f8ed;
+    color: #0b0d0d;
+}
+

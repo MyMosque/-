@@ -1,0 +1,66 @@
+.content {
+    background-color: #0b0d0d;
+    color: #f8f8ed;
+    margin: 10px 0;
+    padding: 10px;
+}
+.content h1 {
+    height:1px;
+    overflow:hidden;
+    left:-10000px;
+    position:absolute;    
+    top:auto;
+    width:1px;        
+}
+.duah {
+    background: #2A2D2E;
+    font-weight: 600;    
+    margin: 0 0 10px 0;
+    padding: 6px;    
+}
+.duah .duah {
+    text-align: right;
+}
+.duah .name {
+    font-weight: 300;
+}
+.duah p {
+    margin: 0;
+}
+.add {
+    align-content: center;
+    padding: 0;
+    text-align: center;
+}
+.add .btn {
+    background-color: #2A2D2E;
+    border: none;
+    color: #f8f8ed;
+    font-size: 30px;
+    width: 90%;
+}
+.search {
+    background: #0b0d0d;
+    border: none;
+    color: #f8f8ed;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+    padding: 0;
+    width: 100%;
+}
+.search:focus {
+    background: #2A2D2E;
+    outline: none;
+}
+@media all and (min-width: 600px) {
+    :host {
+        display: flex;
+        flex-direction: row-reverse;        
+    }
+    .content {
+        margin: 0 0 0 10px;
+        width: 60vw;
+        flex-wrap: wrap;
+    }
+}

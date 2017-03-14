@@ -1,0 +1,17 @@
+[
+    {
+        "name":"sleeping",
+        "duah":"اللَّهُمَّ بِاسْمِكَ أَمُوتُ وَأَحْيَا",
+        "transliteration":"Allahumma Bismika Amutu W'Ahiya",
+        "translation": "O Allah, by Your name I live and die.",
+        "reference":"Bukhari, Muslim",
+        "audio":"sleeping.mp3"
+    },
+    {
+        "name":"awakening",
+        "duah":"الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+        "transliteration":"Alhamdulillah hillazi, Ahyana Ba'dam Amatana, Wa Ilahin Nushur",
+        "translation": "All praise be to Allah, who gave us life after killing us (sleep is a form of death) and to Him will we be raised and returned",
+        "reference":"Bukhari, Muslim"
+    }
+]

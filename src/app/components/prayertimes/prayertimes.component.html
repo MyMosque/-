@@ -1,0 +1,74 @@
+<navmenu></navmenu>
+<div id="prayer">
+    <div *ngIf="todaysPrayers">
+        <div id="prayerHeader">
+            <button type="button" (click)="pagePrayer('Left')" class="btn"><</button>
+            <h2>{{today | date}}</h2>
+            <button type="button" (click)="pagePrayer('Right')" class="btn">></button>
+        </div>        
+        <div id="today"> 
+            <div class="fajr salaah {{currentPrayer[0].fajr}}">
+                <h4>Fajr</h4>
+                <div class="start">
+                    <span class="prayerLabel">Start</span>
+                    <span class="prayerTime">{{todaysPrayers[1]}}</span>
+                </div>
+                <div class="jamaat">
+                    <span class="prayerLabel">Jamaat</span>
+                    <span class="prayerTime">{{todaysPrayers[2]}}</span>
+                </div>
+                <div class="sunrise">
+                    <span class="prayerLabel">Sunrise</span>
+                    <span class="prayerTime">{{todaysPrayers[3]}}</span>
+                </div>
+            </div>
+            <div class="zuhr salaah {{currentPrayer[0].zuhr}}">
+                <h4>Zuhr</h4>
+                <div class="start">
+                    <span class="prayerLabel">Start</span>
+                    <span class="prayerTime">{{todaysPrayers[4]}}</span>
+                </div>
+                <div class="jamaat">
+                    <span class="prayerLabel">Jamaat</span>
+                    <span class="prayerTime">{{todaysPrayers[5]}}</span>
+                </div>
+            </div>
+            <div class="asr salaah {{currentPrayer[0].asr}}">
+                <h4>Asr</h4>
+                <div class="start">
+                    <span class="prayerLabel">Start</span>
+                    <span class="prayerTime">{{todaysPrayers[6]}}</span>
+                </div>
+                <div class="jamaat">
+                    <span class="prayerLabel">Jamaat</span>
+                    <span class="prayerTime">{{todaysPrayers[7]}}</span>
+                </div>
+            </div>
+            <div class="maghrib salaah {{currentPrayer[0].maghrib}}">
+                <h4>Maghrib</h4>
+                <div class="start">
+                    <span class="prayerLabel">Start</span>
+                    <span class="prayerTime">{{todaysPrayers[8]}}</span>
+                </div>
+                <div class="jamaat">
+                    <span class="prayerLabel">Jamaat</span>
+                    <span class="prayerTime">{{todaysPrayers[9]}}</span>
+                </div>
+            </div>
+            <div class="esha salaah {{currentPrayer[0].esha}}">
+                <h4>Esha</h4>
+                <div class="start">
+                    <span class="prayerLabel">Start</span>
+                    <span class="prayerTime">{{todaysPrayers[10]}}</span>
+                </div>
+                <div class="jamaat">
+                    <span class="prayerLabel">Jamaat</span>
+                    <span class="prayerTime">{{todaysPrayers[11]}}</span>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+
+
