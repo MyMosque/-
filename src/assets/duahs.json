@@ -1,6 +1,6 @@
 [
     {
-        "name":"sleeping",
+        "name":"Sleeping",
         "duah":"اللَّهُمَّ بِاسْمِكَ أَمُوتُ وَأَحْيَا",
         "transliteration":"Allahumma Bismika Amutu W'Ahiya",
         "translation": "O Allah, by Your name I live and die.",
@@ -8,17 +8,17 @@
         "audio":"sleeping.mp3"
     },
     {
-        "name":"awakening",
+        "name":"Awakening",
         "duah":"الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
         "transliteration":"Alhamdulillah hillazi, Ahyana Ba'dam Amatana, Wa Ilahin Nushur",
         "translation": "All praise be to Allah, who gave us life after killing us (sleep is a form of death) and to Him will we be raised and returned",
         "reference":"Bukhari, Muslim"
     },
     {
-        "name":"Dua for COVID-19",
+        "name":"Dua for illness",
         "duah":"",
         "transliteration":"Allahumma inni aouthubika min albaras wal junun wal judam wa min sayeeil asqaam",
-        "translation": "Oh Allah I seek your refuge from leprosy,insanity,mutilation and from all serious illnesses ",
+        "translation": "O Allah I seek your refuge from leprosy,insanity,mutilation and from all serious illnesses ",
         "reference":"Sunan ibn Dawood"
     }
     ,{
@@ -37,7 +37,7 @@
       
     }
    ,{
-    "name":"Windex for Negativity",
+    "name":"Dua for Negativity",
     "duah":"اللهم اغسلني من السلبية ", 
     "transliteration":"Allahumma iGsilnee min assalbiyah ",
     "translation":"Oh Allah wash away my negativity."

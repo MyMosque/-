@@ -12,7 +12,7 @@ const appRoutes: Routes = [
         component: HomeComponent,
         data: { 
             name: 'Home',
-            showInNav: false 
+            showInNav: true 
         }
     },
     {

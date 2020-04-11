@@ -8,4 +8,9 @@ import { Router, ActivatedRoute, NavigationEnd, Event } from '@angular/router';
 })
 export class AppComponent {
   title = 'Globe Town Mosque';
+
+  constructor(private router: Router) {
+    this.router.navigate(["prayer-times"], { replaceUrl: false });
+  }
+  
 }

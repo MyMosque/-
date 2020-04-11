@@ -17,6 +17,19 @@ header {
     display: flex;
     margin-bottom: 10px;
 }
+ a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+header a {
+    color: #E3F0EF;
+    display: block;
+    font-weight: 300;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
 .logo {
     width: 50px;
     order: 1;
@@ -55,3 +68,4 @@ h1 {
         margin: 0 auto;
     }
 }
+

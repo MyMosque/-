@@ -36,3 +36,78 @@ h4 {
     font-size: 16px;
     font-weight: 600
 }
+
+@-webkit-keyframes rip {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rip {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  
+  .rip {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+  }
+  
+  .rip:before {
+    content: '';
+    position: absolute;
+    border: #0B0D0D solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  
+  .rip:hover:before, .rip:focus:before, .rip:active:before {
+    -webkit-animation-name: rip;
+    animation-name: rip;
+  }
+
+  .und-cent {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(36, 34, 25, 0.767);
+    position: relative;
+    overflow: hidden;
+  }
+  .und-cent:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: rgba(36, 34, 25, 0.767);
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .und-cent:hover:before, .und-cent:focus:before, .und-cent:active:before {
+    left: 0;
+    right: 0;
+  }
