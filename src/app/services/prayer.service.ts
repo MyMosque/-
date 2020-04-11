@@ -8,7 +8,9 @@ export class PrayerService {
 
     constructor(private _http: Http){
         console.log("Prayer service ready..");
-        this.prayerData = "/assets/prayertimes.json";
+        //this.prayerData = "/assets/prayertimes.json";
+        this.prayerData = "/assets/calendar.json";
+        console.log(this.getPrayerData());
     }
 
     getPrayerData() {

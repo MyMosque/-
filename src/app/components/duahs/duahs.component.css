@@ -16,16 +16,27 @@
     background: #2A2D2E;
     font-weight: 600;    
     margin: 0 0 10px 0;
-    padding: 6px;    
+    padding: 6px;      
 }
 .duah .duah {
     text-align: right;
+    font-size: 15px;
+    color:#ACD5AA;
 }
 .duah .name {
     font-weight: 300;
 }
 .duah p {
     margin: 0;
+}
+.transliteration{
+ margin-top:6px;
+    color:#C2931C;
+
+}
+.reference{
+color:#388686;
+
 }
 .add {
     align-content: center;

@@ -5,6 +5,9 @@
     <div *ngFor="let duah of duahs" class="duah">
         <p class="name">{{duah.name}}</p>
         <p class="duah">{{duah.duah}}</p>
+        <p class="transliteration">{{duah.transliteration}}</p>
+        <p class="translation">{{duah.translation}}</p>
+        <p class="reference">{{duah.reference}}</p> 
     </div>
     <div class="duah add">
         <button (click)="myClick()" class="btn">+</button>

@@ -3,7 +3,7 @@
 }
 body {    
     color: #F8F8ED;
-    background-color: #2A2D2E;
+    background-color: rgba(36, 34, 25, 0.767);
     margin: 0;
     overflow-y:scroll;
     padding: 1em;

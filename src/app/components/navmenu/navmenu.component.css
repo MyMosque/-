@@ -1,6 +1,6 @@
 #menu {
-    align-content: center;    
-    order:2;    
+    align-content: center;
+    order:2;
     margin:0;
     padding: 0;
 }
@@ -9,7 +9,7 @@
     list-style: none;
     margin-bottom: 4px;
 }
-#menu li:last-child {    
+#menu li:last-child {
     margin-bottom: 0px;
 }
 #menu li a {
@@ -22,7 +22,7 @@
     text-decoration: none;
 }
 
-@media all and (min-width: 600px) {    
+@media all and (min-width: 600px) {
     :host {
         order:1;
         flex: 1 0px;
@@ -52,7 +52,7 @@
   }
 }
 
-.rip {  
+.rip {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);

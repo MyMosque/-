@@ -1,4 +1,5 @@
 #wrpr {    
+    background-color: #2A2D2E;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -8,7 +9,7 @@
     flex-flow: row wrap;
 }
 #wrpr > * {
-  padding: 0;
+  padding: 10px;
   flex: 1 100%;
 }
 header {
@@ -45,5 +46,12 @@ h1 {
     }
     .logo {
         width: 60px;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    #wrpr {
+        max-width: 1600px;
+        margin: 0 auto;
     }
 }

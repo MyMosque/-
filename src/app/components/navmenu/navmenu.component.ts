@@ -39,37 +39,38 @@ export class NavMenuComponent {
   }
 
   getKeybordRoute(event:any):string {
-    
-    
+
+
     switch(event) {
       case 38:
-        // alert("A");
+        alert("A");
+        //this.nav.indexOf
         break;
       case 40:
-        // alert("B");
+        alert("B");
         break;
     }
 
-    return "";
+    return "#";
   }
 
   navigate(event) {
     this.router.navigate([this.getKeybordRoute(event.keyCode)], { replaceUrl: true });
   }
 
-  isActive (route:String):Observable<boolean> {    
+  isActive (route:String):Observable<boolean> {
     return new Observable<boolean>( observer => {
       this.router.events.filter(e => e instanceof NavigationEnd)
                         .subscribe((event:Event) => {
                           console.log(route);
                           console.log(event.url);
                           if (route == event.url) {
-                            observer.next(true);                       
+                            observer.next(true);
                           }
                           else {
                             observer.next(false);
                           }
       })
-    });   
+    });
   }
 }
