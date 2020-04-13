@@ -1,5 +1,18 @@
 <navmenu></navmenu>
 <div class="content">
+
+    <li *ngFor="let item of nav" class="rip" [routerLinkActive]="['is-active']">
+        <a routerLink="/{{item.path}}" [routerLinkActive]="['is-active']" [routerLinkActiveOptions]="{ exact: true }">{{item.name}}</a>
+    </li>
+
+    <div class="panel">
+      <h1><dfn title="Peace be upon you">As-salamu Alaykum</dfn></h1>
+      <h2>Thank you for visiting our website.</h2>
+      <p>For more information please visit us at Globe Town Mosque &amp; Cultural Centre, 100 Roman Road, London E2 0RN.</p>
+      <p><dfn title="May Allah reward you with goodness">Jazak Allahu Khayran</dfn>.</p>
+  </div>
+
+
     <div class="panel">
         <h1><dfn title="Peace be upon you">As-salamu Alaykum</dfn></h1>
         <h2>Thank you for visiting our website.</h2>
@@ -9,7 +22,7 @@
     <div class="panel">
         <h1>Important Message</h1>
         <h2>Globe Town Mosque has closed down due to COVID-19</h2>
-        <p>Inshallah everyone stays safe </p>   
+        <p>Inshallah everyone stays safe </p>
         <p><dfn title="May Allah reward you with goodness">Jazak Allahu Khayran</dfn>.</p>
 
 
@@ -17,22 +30,22 @@
         Assalamu alaikum Warahmatullahi Wabarakathu.
 
         With great sadness, we regret to inform the community that Globe Town Masjid and Cultural Centre will be closed temporarily for an indefinite period due to the Coronavirous pandemic (Covid-19) outbreak, starting after the completion of Fajr Salah today (Friday 20 March 2020). All activities, including daily prayers, *Jumm’ah* and children Arabic classes will be suspended.
-        
+
         Although a very difficult decision to make, it is the most reasonable and safest option at this current situation. The decision was made after much deliberation and in accordance with Islamic principles, government guidelines and expert medical advice.
-        
+
         We pray that the closure isn't for very long, and that the global situation improves by the will of almighty Allah Swt.
-        
+
         We will continue to monitor the situation and keep the community updated.
-        
+
         Please pray at home, stay safe and continue to make Dua.
-        
+
         Kind regards,
         Management.
         Globe Town Mosque & Cultural Centre)
-        100 Roman Road 
+        100 Roman Road
         London E2 0RN
         Mob: Shabbir Bhai : 07958029826/  Aminur Rahman 07939833393
-        
+
         JazakAllah Khayran
 
 

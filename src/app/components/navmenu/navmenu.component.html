@@ -1,6 +1,10 @@
 <nav class="">
     <ul id="menu">
-        <li *ngFor="let item of nav" class="rip" [routerLinkActive]="['is-active']"><a routerLink="/{{item.path}}" [routerLinkActive]="['is-active']" [routerLinkActiveOptions]="{ exact: true }">{{item.name}}</a></li>
+        <li *ngFor="let item of nav" [ngClass]="{'hid' : item.isHidden}" class="no-rip" [routerLinkActive]="['is-active']" [routerLinkActiveOptions]="{ exact: true }">
+          <a routerLink="/{{item.path}}" >
+            {{item.name}}
+            <button type="button" (click)="tglMenu()" [ngClass]="{'open' : item.isHidden}" class="btn">&#9776;</button>
+          </a>
+        </li>
     </ul>
 </nav>
-

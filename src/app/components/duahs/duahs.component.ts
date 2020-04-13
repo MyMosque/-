@@ -17,7 +17,7 @@ export class DuahsComponent {
   }
 
   myClick() {
-    alert("Under development, we're looking for volunteers.\nTo contribute please submit additions in the following format:\nhttps://github.com/townmosque/townmosque.github.io/blob/master/src/assets/duahs.json");
+    alert("Under development, we're looking for volunteers.\n\nTo contribute please send us duah data in above format.\n\nPlease inform us of any errors");
   }
 }
 

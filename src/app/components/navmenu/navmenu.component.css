@@ -1,17 +1,30 @@
+:host {
+    top: 0px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    display: block;
+}
+nav {
+  background-color: #2A2D2E;
+  padding: 10px 0;
+}
 #menu {
     align-content: center;
     order:2;
     margin:0;
     padding: 0;
+    background-color: #2A2D2E;
 }
 #menu li {
     background-color: #0B0D0D;
     list-style: none;
     margin-bottom: 4px;
-    display: block;
+}
+#menu li.hid {
+  display: none;
 }
 #menu li:last-child {
-    margin-bottom: 0px;
+  margin-bottom: 0;
 }
 #menu li a {
     color: #E3F0EF;
@@ -22,9 +35,37 @@
     padding: 0.5rem;
     text-decoration: none;
 }
-#menu li a.is-active {
+#menu li a .btn {
+  float: right;
+  position: absolute;
+  /* top: -0.6vw; */
+  top: 0vw;
+  right: 3vw;
+  bottom: 1vw;
+  display: none;
+  font-size: 32px;
+  font-family: Sans serif;
+  font-weight: 600;
+  transform:scale(1,0.3);
+  -webkit-transform:scale(1,0.3);
+  background-color: transparent;
+  border: none;
+  outline:none;
+}
+#menu li.is-active a {
     background-color: #f8f8ed;
     color: #0b0d0d;
+}
+
+#menu li a .btn.open {
+  top: -0.8vw;
+  transform:none;
+  -webkit-transform:none;
+}
+
+#menu li.is-active a .btn {
+  display: inline-block;
+  color: #000;
 }
 
 #menu li.is-active {
@@ -36,8 +77,17 @@
         order:1;
         flex: 1 0px;
     }
-    #menu li a {
+    #menu li a, #menu li a.is-active .btn {
         font-size:3.4vw;
+    }
+    nav {
+      padding: 0;
+    }
+    #menu li a .btn {
+      display: none !important;
+    }
+    #menu li.hid {
+      display: block;
     }
 }
 

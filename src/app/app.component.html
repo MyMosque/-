@@ -1,8 +1,10 @@
 <div id="wrpr">
-  <header>    
+  <header>
     <h1>{{title}}</h1>
   </header>
-  <section>    
+  <section>
+    <div [@routeAnimation]="routeAnimation.state" #routeAnimation>
     <router-outlet></router-outlet>
+    </div>
   </section>
 </div>

@@ -10,9 +10,12 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { PrayerTimesComponent } from './components/prayertimes/prayertimes.component';
 import { DuahsComponent } from './components/duahs/duahs.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { AssistComponent } from './components/assist/assist.component';
+import { EditComponent } from './components/edit/edit.component';
 
 import { PrayerService } from './services/prayer.service';
 import { DuahService } from './services/duah.service';
+import { ContentService } from './services/content.service';
 
 
 @NgModule({
@@ -22,7 +25,9 @@ import { DuahService } from './services/duah.service';
     NavMenuComponent,
     PrayerTimesComponent,
     DuahsComponent,
-    ContactComponent
+    ContactComponent,
+    AssistComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,7 @@ import { DuahService } from './services/duah.service';
     HttpModule,
     routing
   ],
-  providers: [PrayerService, DuahService, DatePipe],
+  providers: [ContentService, PrayerService, DuahService, DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

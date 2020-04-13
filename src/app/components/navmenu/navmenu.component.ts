@@ -1,4 +1,4 @@
-import { Component, style, animate, transition, state, trigger } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, NavigationEnd, Event } from '@angular/router';
 import 'rxjs/add/operator/filter';
 import {Observable} from 'rxjs/Observable';
@@ -8,18 +8,8 @@ import {Observable} from 'rxjs/Observable';
   templateUrl: './navmenu.component.html',
   styleUrls: ['./navmenu.component.css'],
   host: {
-    '(window:keydown)': 'navigate($event)',
-    '[@routeAnimation]': 'true'
-  },
-  animations: [
-    trigger('routeAnimation', [
-      state('*', style({transform: 'scaleX(1)', opacity: 1})),
-      transition('void => *', [
-        style({transform: 'scaleX(1)', opacity: 0}),
-        animate('1s')
-      ])
-    ])
-  ]
+    '(window:keydown)': 'navigate($event)'
+  }
 })
 
 export class NavMenuComponent {
@@ -33,7 +23,9 @@ export class NavMenuComponent {
         {
           "path": i.path,
           "name": i.data["name"],
-          "isActive": this.isActive("/"+i.path)
+          "isActive": this.isActive("/"+i.path),
+          "isCurrent": this.isCurrent("/"+i.path),
+          "isHidden": false
         }
       ));
   }
@@ -62,8 +54,6 @@ export class NavMenuComponent {
     return new Observable<boolean>( observer => {
       this.router.events.filter(e => e instanceof NavigationEnd)
                         .subscribe((event:Event) => {
-                          console.log(route);
-                          console.log(event.url);
                           if (route == event.url) {
                             observer.next(true);
                           }
@@ -72,5 +62,28 @@ export class NavMenuComponent {
                           }
       })
     });
+  }
+
+  isCurrent (route:String):boolean {
+    if (route == this.router.url) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  tglMenu() {
+    console.log(this.nav);
+    for(let item of this.nav) {
+
+        if (item.isHidden) {
+          item.isHidden = false;
+        }
+        else{
+          item.isHidden = true;
+        }
+
+    };
   }
 }

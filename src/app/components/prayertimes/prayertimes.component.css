@@ -26,7 +26,7 @@
     font-size: 12px;
 }
 .salaah .start {
-    order: 1;    
+    order: 1;
 }
 .salaah .jamaat {
     order: 2;
@@ -51,12 +51,11 @@
     :host {
         display: flex;
         flex-direction: row-reverse;
-        
-    }    
+        align-self: baseline;
+    }
     #prayer {
         margin: -56px 0 0 10px;
         width: 60vw;
-        
     }
     #prayer h4, #prayer .prayerTime {
         font-size:3.4vw;

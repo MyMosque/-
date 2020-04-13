@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContentService } from '../../services/content.service';
 
 @Component({
   selector: 'home',
@@ -8,4 +9,11 @@ import { Component } from '@angular/core';
 
 export class HomeComponent {
   page = 'home';
+  private content:any;
+
+  constructor(private _contentService: ContentService) {
+    this._contentService.getContentData().subscribe(c=>{
+      this.content = c;
+    });
+  }
 }

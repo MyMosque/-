@@ -1,4 +1,4 @@
-#wrpr {    
+#wrpr {
     background-color: #2A2D2E;
     display: -webkit-box;
     display: -moz-box;
@@ -7,6 +7,8 @@
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    align-content: flex-start;
+    min-height: 96vh;
 }
 #wrpr > * {
   padding: 10px;
@@ -15,7 +17,7 @@
 header {
     text-align: left;
     display: flex;
-    margin-bottom: 10px;
+    align-self: flex-end;
 }
  a:visited {
     text-decoration: none;
@@ -30,13 +32,19 @@ header a {
     text-decoration: none;
 }
 
-.logo {
+
+/*.logo {
     width: 50px;
     order: 1;
 }
 .logo img {
     height: 30px;
+}*/
+
+section {
+  padding-top: 0 !important;
 }
+
 h1 {
     order: 2;
 }

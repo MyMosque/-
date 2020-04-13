@@ -15,33 +15,33 @@
         "reference":"Bukhari, Muslim"
     },
     {
-        "name":"Dua for illness",
-        "duah":"",
-        "transliteration":"Allahumma inni aouthubika min albaras wal junun wal judam wa min sayeeil asqaam",
+        "name":"Illness",
+        "duah":"اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبَرَصِ، وَالْجُنُونِ، وَالْجُذَامِ، وَمِنْ سَيِّئِ الأَسْقَامِ",
+        "transliteration":"Allahumma inni a'uzubika minal baros, wal junuun wal juzzam, wa min sayyi'’'il-asqam",
         "translation": "O Allah I seek your refuge from leprosy,insanity,mutilation and from all serious illnesses ",
         "reference":"Sunan ibn Dawood"
-    }
-    ,{
-        "name":"Toilet Dua",
+    },
+    {
+      "name":"Anger",
+      "duah":"اللَّهُمَّ أَذْهِبْ غَيْظَ قَلْبِي",
+      "transliteration":"Allahumma azhib Gaydha Qalbee.",
+      "translation":"Oh Allah, remove anger from my heart."
+
+    },
+    {
+        "name":"Negativity",
+        "duah":"اللهم اغسلني من السلبية ",
+        "transliteration":"Allahumma iGsilnee min assalbiyah ",
+        "translation":"Oh Allah wash away my negativity."
+    },
+    {
+        "name":"Toilet",
         "duah":"اللَّهُـمَّ إِنِّي أَعُـوذُ بِـكَ مِـنَ الْخُـبْثِ وَالْخَبَائِثِ.",
-        "transliteration":"allahumma innee aAAoothu bika minal-khubthi wal-khaba-ith",      
+        "transliteration":"allahumma innee aAAoothu bika minal-khubthi wal-khaba-ith",
         "translation":"O Allah, I take refuge with you from all evil and evil-doers.",
         "reference":"Al-Bukhari 1:45, Muslim 1:283"
-        
-    }    
-    ,{
-      "name":"Dua for Anger",
-      "duah":"اللَّهُمَّ أَذْهِبْ غَيْظَ قَلْبِي",
-      "transliteration":"Allahumma azhib Gaydha Qalbee.",      
-      "translation":"Oh Allah, remove anger from my heart."
-      
+
     }
-   ,{
-    "name":"Dua for Negativity",
-    "duah":"اللهم اغسلني من السلبية ", 
-    "transliteration":"Allahumma iGsilnee min assalbiyah ",
-    "translation":"Oh Allah wash away my negativity."
-   }
-]
+  ]
 
 
